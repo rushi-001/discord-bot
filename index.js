@@ -25,4 +25,4 @@ client.on('interactionCreate', async interaction => {
 
 client.login(token);
 
-// todo: perform the url shortening 
+// todo: perform the url shortening.
