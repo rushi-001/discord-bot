@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits } = require("discord.js")
 
-const token = "MTI0MjA3ODU1NDMyMjIzOTYyMA.GYzlSN.T3Rw6DOD_rqV3aVnryWpNZbDR6s6gF_gRGmU7w"
+const token = "MTI0MjA3ODU1NDMyMjIzOTYyMA.GxsMo-.pL4jFgqdnmw_aBRyHbQEHHQiSYsuCWXA83bBug"
 
 const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
@@ -26,3 +26,4 @@ client.on('interactionCreate', async interaction => {
 client.login(token);
 
 // todo: perform the url shortening.
+// test
