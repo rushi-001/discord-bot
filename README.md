@@ -1,4 +1,4 @@
-# URL Shortener Discord Bot <img src="./assets/http.png" alt="Bot Logo" width="200" height="200">
+# URL Shortener Discord Bot [ <img src="./assets/http.png" alt="Bot Logo" width="40" height="40"> ]
 
 ## Project Description
 
@@ -6,9 +6,9 @@ The URL Shortener Discord Bot is a Discord bot that allows users to shorten URLs
 
 ## Features
 
-- **/help**: Provides information about the bot and lists all available commands.
-- **/create [url]**: Generates a short URL for the given URL and stores it in the database.
-- **/myurls**: Retrieves and lists all URLs that the user has created, using the stored user ID.
+- `/help` : Provides information about the bot and lists all available commands.
+- `/create [url]` : Generates a short URL for the given URL and stores it in the database.
+- `/myurls` : Retrieves and lists all URLs that the user has created, using the stored user ID.
 
 ## Dependencies
 
