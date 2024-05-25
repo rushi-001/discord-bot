@@ -16,7 +16,11 @@ const commands = [
                 required: true,
             }
         ]
-    }
+    },
+    {
+        name: 'myurls',
+        description: 'Displays all URLs you have shortened',
+    },
 ]
 
 const rest = new REST({ version: "10" }).setToken("MTI0MjA3ODU1NDMyMjIzOTYyMA.GxsMo-.pL4jFgqdnmw_aBRyHbQEHHQiSYsuCWXA83bBug");
