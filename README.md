@@ -55,9 +55,13 @@ The URL Shortener Discord Bot is a Discord bot that allows users to shorten URLs
       <br /><img src="./assets/help.png" alt="Bot Logo" width="auto" height="auto"><br /><br />
     - **/create [url]**: Shortens the provided URL and returns the shortened version.<br />
       <br /><img src="./assets/create.png" alt="Bot Logo" width="auto" height="auto"><br />
+      <br /><img src="./assets/short url.png" alt="Bot Logo" width="auto" height="auto"><br />
     - **/myurls**: Displays all URLs that you have shortened.
-        - If the URLs are not created or no URLs found in database.<br />
-          <br /><img src="./assets/http.png" alt="Bot Logo" width="40" height="40"><br />
+        - If the URLs are not created or no URLs found in database:<br />
+          <br /><img src="./assets/myurls if no urls created.png" alt="Bot Logo" width="auto" height="auto"><br />
+        - If the URLs found in database:<br />
+          <br /><img src="./assets/myurls.png" alt="Bot Logo" width="auto" height="auto"><br />
+
 
 ## Commands Overview
 
