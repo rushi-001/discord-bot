@@ -1,4 +1,4 @@
-# URL Shortener Discord Bot ![Bot Logo](./assets\http.png)
+# URL Shortener Discord Bot <img src="./assets/http.png" alt="Bot Logo" width="200" height="200">
 
 ## Project Description
 
