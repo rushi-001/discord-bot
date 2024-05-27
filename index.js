@@ -27,7 +27,7 @@ client.on('interactionCreate', async interaction => {
         const url = interaction.options.getString('url');
         const userId = interaction.user.id;
         const shortUrlId = await handleGenerateNewShortUrl(url, userId);
-        await interaction.reply(`+------------------------------------------+ \n_**~{Short URL Created}~**_ \n❌ Your URL> ${url} \n\n**✅ Your Short URL> http://localhost:8008/${shortUrlId}** \n+------------------------------------------+`);
+        await interaction.reply(`+------------------------------------------+ \n_**~{Short URL Created}~**_ \n❌ Your URL> ${url} \n\n**✅ Your Short URL> https://discord-bot-kmwj.onrender.com/${shortUrlId}** \n+------------------------------------------+`);
     }
     if (interaction.commandName === 'myurls') {
         const userId = interaction.user.id;
@@ -37,7 +37,7 @@ client.on('interactionCreate', async interaction => {
             await interaction.reply(`+------------------------------------------+ \n_**~{URLs Not Found}~**_ \n✔ You haven't created any short URLs yet. \n✔ Use command **/help** to get more info. \n✔ Use command **/create [url ]** for creating new URLs. \n+------------------------------------------+`);
         } else {
             const urlCount = urls.length;
-            const reply = urls.map(url => `✔ Short URL: http://localhost:8008/${url.shortId} -> Original URL: ${url.redirectedUrl}`).join('\n');
+            const reply = urls.map(url => `✔ Short URL: https://discord-bot-kmwj.onrender.com/${url.shortId} -> Original URL: ${url.redirectedUrl}`).join('\n');
             await interaction.reply(`+------------------------------------------+ \n✔ You had created a total of **${urlCount}** URLs with us. \n+------------------------------------------+ \n${reply} \n+------------------------------------------+`);
         }
     }
