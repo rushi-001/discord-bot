@@ -46,7 +46,7 @@ The URL Shortener Discord Bot allows users to shorten URLs directly from their D
 
 4. **Start the bot:**
     ```bash
-    nodemon index.js
+    npm start
     ```
 
 ## Usage
