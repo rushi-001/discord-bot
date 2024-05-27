@@ -48,6 +48,6 @@ app.get("/:shortId", handleUserShortUrl);
 
 client.login(token);
 // mongo db connection
-connectMongoDB("mongodb://127.0.0.1:27017/discord-url-shortener-db").then(() => console.log("MongoDB Connected!")); // `url-shortener-db` is database name
+connectMongoDB(process.env.MongoDB_URL).then(() => console.log("MongoDB Connected!")); // `url-shortener-db` is database name
 // Server Connection
 app.listen(PORT, () => console.log(`Server started on PORT: ${PORT}`));
