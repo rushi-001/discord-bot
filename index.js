@@ -38,7 +38,7 @@ client.on('interactionCreate', async interaction => {
         } else {
             const urlCount = urls.length;
             const reply = urls.map(url => `✔ Short URL: http://localhost:8008/${url.shortId} -> Original URL: ${url.redirectedUrl}`).join('\n');
-            await interaction.reply(`+------------------------------------------+ \n✔ You created a total of **${urlCount}** URLs with us. \n+------------------------------------------+ \n${reply} \n+------------------------------------------+`);
+            await interaction.reply(`+------------------------------------------+ \n✔ You had created a total of **${urlCount}** URLs with us. \n+------------------------------------------+ \n${reply} \n+------------------------------------------+`);
         }
     }
 });
