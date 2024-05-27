@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express()
 const token = process.env.BotToken
-const PORT = 8008;
+const PORT = process.env.PORT;
 
 const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
