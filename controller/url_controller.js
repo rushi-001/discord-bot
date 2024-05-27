@@ -36,8 +36,17 @@ const handleUserShortUrl = async (req, res) => {
                     timestamp: Date.now()
                 }
             }
+        },
+        {
+            new: true // This ensures the updated document is returned
         }
     )
+    if (!entry) {
+        // If no entry is found, send a 404 response
+        return res.status(404).send('URL not found');
+    }
+
+    // Redirect to the original URL
     res.redirect(entry.redirectedUrl);
 }
 
