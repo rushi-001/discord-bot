@@ -41,6 +41,7 @@ The URL Shortener Discord Bot allows users to shorten URLs directly from their D
     ```env
     BotToken=your_discord_bot_token
     MongoDB_URL=your_mongodb_uri
+    Application_ID = discord_bot_application_id
     ```
 
 4. **Start the bot:**
