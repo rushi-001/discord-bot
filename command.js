@@ -23,11 +23,11 @@ const commands = [
     },
 ]
 
-const rest = new REST({ version: "10" }).setToken("MTI0MjA3ODU1NDMyMjIzOTYyMA.GxsMo-.pL4jFgqdnmw_aBRyHbQEHHQiSYsuCWXA83bBug");
+const rest = new REST({ version: "10" }).setToken(process.env.BotToken);
 
 (async () => {
     try {
-        await rest.put(Routes.applicationCommands("1242078554322239620"), { body: commands });
+        await rest.put(Routes.applicationCommands(process.env.Application_ID), { body: commands });
         console.log("Applicaiton connected (/)");
     } catch (error) {
         console.error(error)
