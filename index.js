@@ -2,9 +2,10 @@ const { Client, GatewayIntentBits } = require("discord.js")
 const connectMongoDB = require("./connection.js")
 const express = require("express")
 const { handleGenerateNewShortUrl, handleUserShortUrl, getUserUrls } = require("./controller/url_controller.js")
+require("dotenv").config();
 
 const app = express()
-const token = "MTI0MjA3ODU1NDMyMjIzOTYyMA.GxsMo-.pL4jFgqdnmw_aBRyHbQEHHQiSYsuCWXA83bBug"
+const token = process.env.BotToken
 const PORT = 8008;
 
 const client = new Client({
