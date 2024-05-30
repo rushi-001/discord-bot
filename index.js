@@ -1,3 +1,5 @@
+// Welcome to the Rushi's Project Discord Bot :]
+
 const { Client, GatewayIntentBits } = require("discord.js")
 const connectMongoDB = require("./connection.js")
 const express = require("express")
